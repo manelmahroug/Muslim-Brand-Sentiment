@@ -65,9 +65,5 @@ The **Muslim Brand Index** aims to track and improve public sentiment toward Mus
 
 ---
 
-### Contributing
-
-If you'd like to contribute to the development of the **Muslim Brand Index**, please follow these steps:
-1. **Fork the repository** and create your branch.
-2. **Make changes** to improve data collection, visualization, or analysis.
-3. **Submit a pull request** with a description of your changes.
+### Citations
+https://www.pewresearch.org/short-reads/2019/10/31/in-u-s-familiarity-with-religious-groups-is-associated-with-warmer-feelings-toward-them/
