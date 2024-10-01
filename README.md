@@ -20,8 +20,9 @@ The framework – **Understand, Identify, Execute** – developed by Facebook's 
   - **Community Interactions**
 
 - **Identify Core Metrics & Goals**: Define metrics that can represent sentiment effectively, such as:
-  - **"Likeability" Score**: Derived from survey responses measuring public opinions on Muslims.
-  - **Sentiment Analysis of Media Coverage**: Measure how often Muslims are portrayed in a positive vs. negative light.
+  - **Favorability Score**: Derived from survey responses measuring public opinions on Muslims eg. Favorability Score = Sum of All Ratings / Total Number of Responses
+    This could help us measure how people feel about Muslims and can highlight shifts in perception over time
+  - **Sentiment Analysis of Media Coverage**: Measure how often Muslims are portrayed in a positive vs. negative light
   - **Engagement Metrics**: Assess how Muslims are perceived in day-to-day interactions (e.g., willingness to hire, befriend, or live near). A metric like **NPS (Net Promoter Score)** can be useful here.
 
 - **Track Trends Across Time & Demographics**: Establish a baseline and analyze sentiment across **time**, **geographies**, and **demographics**. Understanding the volatility, evolution, and correlation with world events is crucial.
