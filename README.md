@@ -2,8 +2,8 @@
 
 # Muslim Brand Index Project
 
-Many Muslims across the United States face heightened scrutiny, often finding themselves questioned—directly or indirectly—about their character, beliefs, and moral stance on sensitive issues. A crime committed by a Muslim individual frequently casts a shadow over the entire community, harming its public perception. While various ideas exist on how to shift this negative narrative, they often lack data-driven support. 
-
+Many Muslims across the United States face ongoing scrutiny, often finding themselves questioned—directly or indirectly—about their character, beliefs, and moral stance on sensitive issues. A crime committed by a Muslim individual frequently casts a shadow over the entire community, harming its public perception. 
+While various ideas exist on how to shift this negative narrative, they often lack data-driven support. 
 To address this, we aim to develop a **Muslim Brand Index** to measure the 'likeability' of Muslims in the U.S. over time. This index will provide valuable insights into public perceptions, identify opportunities for positive change, and inform the strategic allocation of resources—capital, talent, and effort—to improve the overall perception of Muslims effectively.
 
 ---
@@ -14,7 +14,7 @@ The framework – **Understand, Identify, Execute** – developed by Facebook's 
 
 ### 1. Understand
 
-- **Analyze the Current State of Muslim Sentiment**: Collect data from various sources, including surveys, social media sentiment analysis, news coverage, and community feedback. The goal is to break down the problem into core areas like:
+- **Analyze the Current State of Muslim Sentiment**: Collect data from various sources, including surveys, social media, news coverage, and community feedback. The goal is to break down the problem into core areas like:
   - **Public Perception**
   - **Media Portrayal**
   - **Community Interactions**
@@ -23,7 +23,7 @@ The framework – **Understand, Identify, Execute** – developed by Facebook's 
   - **Favorability Score**: Derived from survey responses measuring public opinions on Muslims eg. Favorability Score = Sum of All Ratings / Total Number of Responses
     This could help us measure how people feel about Muslims and can highlight shifts in perception over time
   - **Sentiment Analysis of Media Coverage**: Measure how often Muslims are portrayed in a positive vs. negative light
-  - **Engagement Metrics**: Assess how Muslims are perceived in day-to-day interactions (e.g., willingness to hire, befriend, or live near). A metric like **NPS (Net Promoter Score)** can be useful here.
+  - **Engagement Metrics**: Assess how Muslims are perceived in day-to-day interactions (e.g. willingness to hire, befriend, or live near). A metric like **NPS (Net Promoter Score)** can be useful here.
 
 - **Track Trends Across Time & Demographics**: Establish a baseline and analyze sentiment across **time**, **geographies**, and **demographics**. Understanding the volatility, evolution, and correlation with world events is crucial.
 
