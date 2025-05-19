@@ -2,24 +2,38 @@
 
 # Muslim Brand Index Project
 
-Many Muslims across the United States face ongoing scrutiny, often finding themselves questioned—directly or indirectly—about their character, beliefs, and moral stance on sensitive issues. A crime committed by a Muslim individual frequently casts a shadow over the entire community, harming its public perception. 
+
+## Summary
+
+The **Muslim Brand Index** aims to track and improve public sentiment toward Muslims in the U.S. by identifying key drivers of perception and implementing data-driven strategies to address them effectively. The process follows a clear framework: **Understand the problem, Identify areas of improvement, and Execute actionable solutions**, while continually refining the approach based on feedback and results.
+
+
+## Overview
+
+Many Muslims across the United States face ongoing scrutiny, often finding themselves questioned—directly or indirectly—about their character, beliefs, and moral stance on sensitive issues. 
+
+A crime committed by one Muslim frequently casts a shadow over the entire community, harming its public perception. 
 While various ideas exist on how to shift this negative narrative, they often lack data-driven support. 
-To address this, we aim to develop a **Muslim Brand Index** to measure the 'likeability' of Muslims in the U.S. over time. This index will provide valuable insights into public perceptions, identify opportunities for positive change, and inform the strategic allocation of resources—capital, talent, and effort—to improve the overall perception of Muslims effectively.
+To address this, we aim to develop a **Muslim Brand Index** to measure the 'likeability' of Muslims in the U.S. over time. 
+
+This index will provide valuable insights into public perceptions, identify opportunities for positive change, and inform the strategic allocation of capital, talent, and effort to improve the overall perception of Muslims effectively.
 
 ---
 
 ## Strategy
 
-The framework – **Understand, Identify, Execute** – developed by Facebook's Growth Team, provides a clear path from problem recognition to actionable solutions, using data-driven insights and iterative experimentation to achieve our goals.
+The framework – **Understand, Identify, Execute** – developed by Facebook's Growth Team, provides a clear path from problem recognition to actionable solutions. Using data-driven insights combined with iterative experimentation the goal is to move from problem to solution in a systematic way
 
 ### 1. Understand
 
 - **Analyze the Current State of Muslim Sentiment**: Collect data from various sources, including surveys, social media, news coverage, and community feedback. The goal is to break down the problem into core areas like:
+
   - **Public Perception**
   - **Media Portrayal**
   - **Community Interactions**
 
 - **Identify Core Metrics & Goals**: Define metrics that can represent sentiment effectively, such as:
+
   - **Favorability Score**: Derived from survey responses measuring public opinions on Muslims eg. Favorability Score = Sum of All Ratings / Total Number of Responses
     This could help us measure how people feel about Muslims and can highlight shifts in perception over time
   - **Sentiment Analysis of Media Coverage**: Measure how often Muslims are portrayed in a positive vs. negative light
@@ -50,6 +64,7 @@ The framework – **Understand, Identify, Execute** – developed by Facebook's 
 ### 3. Execute
 
 - **Implement Targeted Interventions**: Based on hypotheses, launch initiatives to improve sentiment:
+
   - **Media Partnerships**: Collaborate with media outlets to promote positive and accurate stories about Muslim communities.
   - **Community Engagement Programs**: Foster interfaith dialogues and community programs to encourage direct interactions between Muslims and non-Muslims.
   - **Content Campaigns**: Develop social media and ad campaigns to highlight Muslim contributions to society.
@@ -60,9 +75,6 @@ The framework – **Understand, Identify, Execute** – developed by Facebook's 
 
 ---
 
-### Summary
-
-The **Muslim Brand Index** aims to track and improve public sentiment toward Muslims in the U.S. by identifying key drivers of perception and implementing data-driven strategies to address them effectively. The process follows a clear framework: **Understand the problem, Identify areas of improvement, and Execute actionable solutions**, while continually refining the approach based on feedback and results.
 
 ---
 
