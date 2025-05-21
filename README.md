@@ -5,7 +5,7 @@
 
 ## Summary
 
-The **Muslim Brand Index** aims to track and improve public sentiment toward Muslims in the U.S. by identifying key drivers of perception and implementing data-driven strategies to address them effectively. The process follows a clear framework: **Understand the problem, Identify areas of improvement, and Execute actionable solutions**, while continually refining the approach based on feedback and results.
+The **Muslim Brand Index** aims to track and improve public sentiment towards Muslims in the U.S. by identifying key drivers of perception and implementing data-driven strategies to address them effectively. The process follows a clear framework: **Understand the problem, Identify areas of improvement, and Execute actionable solutions**, while continually refining the approach based on feedback and results.
 
 
 ## Overview
