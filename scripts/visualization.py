@@ -1,16 +1,22 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
+import os
+
+#helper function to save plots in the images folder
+def save_plot(title):
+    image_dir = os.path.join(os.path.dirname(__file__), "..", "images")
+    os.makedirs(image_dir, exist_ok=True)
+    filename = title.replace(" ", "_").replace("(", "").replace(")", "").replace("?", "")
+    return os.path.join(image_dir, f"{filename}.png")
 
 def plot_percentages(df, column_name, x_label, title):
     plt.rcParams['figure.dpi'] = 300
     counts_df = df[column_name].value_counts(normalize=True).reset_index()
     counts_df.columns = ['Category', 'Percentage']
     counts_df['Percentage'] *= 100
-
     max_index = counts_df['Percentage'].idxmax()
-    colors = ['red' if i == max_index else 'grey' for i in range(len(counts_df))]
-
+    colors = ['#A9F5AE' if i == max_index else 'grey' for i in range(len(counts_df))]
     plt.figure(figsize=(8.5, 5.5))
     sns.barplot(x='Category', y='Percentage', data=counts_df, palette=colors)
     plt.title(title, fontsize=10)
@@ -19,8 +25,12 @@ def plot_percentages(df, column_name, x_label, title):
     plt.xticks(rotation=45, ha='right', fontsize=7)
     plt.yticks(rotation=45, ha='right', fontsize=7)
     plt.tight_layout()
-    plt.savefig(f'images/{title}.png', dpi=300)
-    plt.show()
+    print("Saving plot to:", save_plot(title))
+
+    plt.savefig(save_plot(title), dpi= 300)
+   
+
+    
 
 def plot_stacked_bar_chart(df, title, xlabel, ylabel, cat_col, sent_col, order=None, legend_title='View'):
     plt.rcParams['figure.dpi'] = 300
@@ -51,7 +61,7 @@ def plot_stacked_bar_chart(df, title, xlabel, ylabel, cat_col, sent_col, order=N
     plt.xticks(rotation=45, ha='right')
     plt.legend(title=legend_title, bbox_to_anchor=(1.05, 1), loc='upper left')
     plt.tight_layout()
-    plt.savefig(f'images/{title}.png', dpi=300)
+    plt.savefig(save_plot(title), dpi=300)
     plt.show()
 
 def plot_comfort(df, category_col, comfort_level, title, xlabel, ylabel):
@@ -90,7 +100,7 @@ def plot_comfort(df, category_col, comfort_level, title, xlabel, ylabel):
                 cumulative_percentage += percentage
 
     plt.tight_layout()
-    plt.savefig(f'images/{title}.png', dpi=300)
+    plt.savefig(save_plot(title), dpi=300)
     plt.show()
 
 def plot_exposure(df, category_col, exposure_level, title, xlabel, ylabel): 
@@ -126,7 +136,7 @@ def plot_exposure(df, category_col, exposure_level, title, xlabel, ylabel):
                 cumulative_percentage += percentage
 
     plt.tight_layout()
-    plt.savefig(f'images/{title}.png', dpi=300)
+    plt.savefig(save_plot(title), dpi=300)
     plt.show()
 
 def plot_income(df, title, xlabel, ylabel, cat_col, sent_col, legend_title='View', cat_order=None):
@@ -156,5 +166,5 @@ def plot_income(df, title, xlabel, ylabel, cat_col, sent_col, legend_title='View
     plt.xticks(rotation=45, ha='right')
     plt.legend(title=legend_title, bbox_to_anchor=(1.05, 1), loc='upper left')
     plt.tight_layout()
-    plt.savefig(f'images/{title}.png', dpi=300)
+    plt.savefig(save_plot(title), dpi=300)
     plt.show()
