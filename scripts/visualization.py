@@ -168,3 +168,51 @@ def plot_income(df, title, xlabel, ylabel, cat_col, sent_col, legend_title='View
     plt.tight_layout()
     plt.savefig(save_plot(title), dpi=300)
     plt.show()
+
+
+def plot_stacked_bar_chart_interaction(df, title, xlabel, ylabel, cat_col, sent_col, legend_title='View'):
+    """
+    Plots a stacked bar chart with percentages based on the grouping of two columns, 
+    one for categories (e.g., education or religion)
+    and the other for sentiments.
+    """
+    
+    colors = {
+        'Good': '#8ccc87',
+        'Bad': '#ba3e2b',
+        'Neutral':'#d1cfcf'
+    }
+    interaction_order = ["None - 0", "1", "2 to 4", "5 to 10", "More than 10"]
+    
+    grouped = df.groupby([cat_col, sent_col]).size().unstack(fill_value=0)
+
+    grouped = grouped.reindex(interaction_order)
+    
+    grouped_percentage = grouped.div(grouped.sum(axis=1), axis=0) * 100
+
+    ax = grouped_percentage.plot(kind='bar', stacked=True, figsize=(12, 8), \
+                                 color=[colors[col] for col in grouped_percentage.columns])
+    # Add percentage annotations
+    for i, (colname, coldata) in enumerate(grouped_percentage.items()):
+        for index, value in enumerate(coldata):
+            if value > 0:  # Only annotate non-zero segments
+                ax.text(index, 
+                        grouped_percentage.iloc[:index+1, :i+1].sum(axis=1)[index] - (value / 2), 
+                        # Position the text in the center of the segment
+                        f"{value:.1f}%", 
+                        ha='center', 
+                        va='center', 
+                        color='white' if colors[colname] == 'grey' else 'black', 
+                        fontsize=8)
+
+
+    plt.title(title, fontsize=16)
+    plt.xlabel(xlabel, fontsize=14)
+    plt.ylabel(ylabel, fontsize=14)
+    plt.xticks(rotation=45, ha='right')
+
+    # Position the legend outside the plot
+    plt.legend(title=legend_title, bbox_to_anchor=(1.05, 1), loc='upper left')
+    plt.figure(figsize=(9, 5), dpi=800)
+    plt.savefig(save_plot(title), dpi=300)
+    plt.show()
