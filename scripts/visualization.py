@@ -216,3 +216,42 @@ def plot_stacked_bar_chart_interaction(df, title, xlabel, ylabel, cat_col, sent_
     plt.figure(figsize=(9, 5), dpi=800)
     plt.savefig(save_plot(title), dpi=300)
     plt.show()
+
+
+def plot_exposure(df, category_col, exposure_level, title, xlabel, ylabel): 
+    
+    grouped = df.groupby([category_col, exposure_level]).size().reset_index(name='count')
+    totals = grouped.groupby(category_col)['count'].transform('sum')
+    grouped['percentage'] = (grouped['count'] / totals) * 100
+
+    pivot_table = grouped.pivot(index=category_col, columns=exposure_level, values='percentage').fillna(0)
+
+    exposure_colors = {
+        'Often': '#17b50e',            
+        'Not Often': '#cf4229',     
+        "I don't know": '#9db0f2' 
+    }
+
+    ax = pivot_table.plot(kind='bar', stacked=True, figsize=(10, 6), 
+                          color=[exposure_colors.get(level, '#cccccc') for level in pivot_table.columns])
+
+
+    plt.title(title)
+    plt.xlabel(xlabel)
+    plt.ylabel(ylabel)
+    plt.xticks(rotation=45, ha='right')
+    plt.legend(title='Exposure Level', bbox_to_anchor=(1.05, 1), loc='upper left')
+
+    for i, category in enumerate(pivot_table.index):
+        cumulative_percentage = 0
+        for level in pivot_table.columns:
+            percentage = pivot_table.loc[category, level]
+            if percentage > 0:
+                ax.text(
+                    i, cumulative_percentage + (percentage / 2),  # Position in the middle of each segment
+                    f"{percentage:.1f}%", 
+                    ha='center', va='center', color='white' if level == 'Often' else 'black', fontsize=9
+                )
+                cumulative_percentage += percentage
+    plt.figure(figsize=(9, 5), dpi=400)
+    plt.show()
