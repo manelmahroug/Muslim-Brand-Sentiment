@@ -10,7 +10,7 @@ The **Muslim Brand Index** aims to track and improve public sentiment towards Mu
 
 ## Overview
 
-Many Muslims across the United States face ongoing scrutiny, often finding themselves questioned—directly or indirectly—about their character, beliefs, and moral stance on sensitive issues. 
+Many Muslims across the United States face ongoing scrutiny, often finding themselves questioned either directly or indirectly about their character, beliefs, and moral stance on sensitive issues. 
 
 A crime committed by one Muslim frequently casts a shadow over the entire community, harming its public perception. 
 While various ideas exist on how to shift this negative narrative, they often lack data-driven support. 
@@ -22,7 +22,7 @@ This index will provide valuable insights into public perceptions, identify oppo
 
 ## Strategy
 
-The framework – **Understand, Identify, Execute** – developed by Facebook's Growth Team, provides a clear path from problem recognition to actionable solutions. Using data-driven insights combined with iterative experimentation the goal is to move from problem to solution in a systematic way
+The framework  **Understand, Identify, Execute** developed by Facebook's Growth Team, provides a clear path from problem recognition to actionable solutions. Using data-driven insights combined with iterative experimentation the goal is to move from problem to solution in a systematic way
 
 ### 1. Understand
 
