@@ -15,7 +15,7 @@ def load_clean_data(filepath):
 
     # Drop personally identifiable or irrelevant columns
     drop_cols = [
-        'Respondent ID', 'Collector ID', 'Start Date', 'End Date',
+        'Respondent ID', 'Collector ID',
         'IP Address', 'Email Address', 'First Name', 'Last Name',
         'Custom Data 1', 'collector_type_source', 'Device'
     ]
