@@ -1,0 +1,24 @@
+muslim_sentiment_analysis/
+│
+├── data/
+│   └── muslim_brand_apr_2025.csv
+│
+├── images/
+│   └── (all saved plots)
+│
+├── scripts/
+│   ├── __init__.py
+│   ├── data_loader.py
+│   ├── cleaning.py
+│   ├── metrics.py
+│   ├── visualization.py
+│   └── sentiment_utils.py
+│
+├── notebooks/
+│   └── analysis_apr2025.ipynb
+│
+├── outputs/
+│   └── metrics_summary.csv
+│
+├── requirements.txt
+└── README.md
