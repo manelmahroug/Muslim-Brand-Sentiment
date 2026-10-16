@@ -28,7 +28,38 @@ def plot_percentages(df, column_name, x_label, title):
     print("Saving plot to:", save_plot(title))
 
     plt.savefig(save_plot(title), dpi= 300)
-   
+
+
+def plot_percentages_labeled(df, column_name, x_label, title):
+    plt.rcParams['figure.dpi'] = 300
+    counts_df = df[column_name].value_counts(normalize=True).reset_index()
+    counts_df.columns = ['Category', 'Percentage']
+    counts_df['Percentage'] *= 100
+    max_index = counts_df['Percentage'].idxmax()
+    colors = ['#A9F5AE' if i == max_index else 'grey' for i in range(len(counts_df))]
+
+    plt.figure(figsize=(8.5, 5.5))
+    ax = sns.barplot(x='Category', y='Percentage', data=counts_df, palette=colors)
+
+    # Add percentage labels on top of each bar
+    for container in ax.containers:
+        ax.bar_label(container, fmt='%.1f%%', fontsize=7, padding=2)
+
+    # Leave room above the tallest bar so its label isn't cut off
+    ax.set_ylim(0, counts_df['Percentage'].max() * 1.1)
+
+    plt.title(title, fontsize=10)
+    plt.xlabel(x_label, fontsize=8)
+    plt.ylabel('Percentage', fontsize=8)
+    plt.xticks(rotation=45, ha='right', fontsize=7)
+    plt.yticks(rotation=45, ha='right', fontsize=7)
+    plt.tight_layout()
+
+    path = save_plot(title)
+    print("Saving plot to:", path)
+    plt.savefig(path, dpi=300)
+    
+    plt.show()
 
     
 
